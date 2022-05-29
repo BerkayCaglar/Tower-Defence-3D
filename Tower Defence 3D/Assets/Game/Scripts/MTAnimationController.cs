@@ -16,10 +16,12 @@ public class MTAnimationController : MonoBehaviour
     public void PlayRightBarrelAnimation()
     {
         rightBarrelAnimator.SetBool("IsAttacking",true);
+        //rightBarrelAnimator.SetFloat("AnimationSpeed",mTSpawnBullet.ammoSpawnRate+1f);
     }
     public void PlayLeftBarrelAnimation()
     {
         leftBarrelAnimator.SetBool("IsAttacking",true);
+        //leftBarrelAnimator.SetFloat("AnimationSpeed",mTSpawnBullet.ammoSpawnRate+1f);
     }
     public void StopBarrelAnimation()
     {

@@ -13,7 +13,7 @@ public class MTSpawnBullet : MonoBehaviour
     void Start()
     {
         FindBarrelObjects();
-        InvokeRepeating("SpawnManager",0f,0.5f);
+        InvokeRepeating("SpawnManager",0f,0.1f);
         FindMTAnimationController();
     }
 
