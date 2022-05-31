@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class RLBulletMovement : TowerManager
 {
-    private float Speed = 40f;
-    private bool go = true;
+    private float Speed = 30f;
+    private bool Continue = true;
     private void Update() {
-        if(go)
+        if(Continue)
         {
             MoveBullet();
             
             transform.rotation=LookTarget(); // TowerManager.cs
         }
     }
-    private void OnCollisionEnter() {
-        go=false;
+    private void OnCollisionEnter(Collision other) {
+        if(Continue)
+            gameObject.GetComponentInChildren<ParticleSystem>().gameObject.SetActive(false);
+        Continue=false;   
     }
     private void MoveBullet()
     {

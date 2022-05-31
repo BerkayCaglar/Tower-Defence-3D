@@ -4,26 +4,24 @@ using UnityEngine;
 
 public class RLAnimationController : MonoBehaviour
 {
-    private Animator Animator;
-    private GameObject rocketLauncherBody;
+    private Animator RLHeadAnimator;
+    private Animator RLBodyAnimator;
     private void Start() {
         FindAnimator();
-        rocketLauncherBody = GameObject.Find("RLBody");
+        RLBodyAnimator = GameObject.Find("RLBody").GetComponent<Animator>();
     }
     public void PlayRLAnimation()
     {
-        Animator.SetBool("IsAttacking",true);    
-    }
-    public void ResetBarrelPosition()
-    {
-        
+        RLHeadAnimator.SetBool("IsAttacking",true);    
+        RLBodyAnimator.SetBool("IsAttacking",true);
     }
     public void StopRLAnimation()
     {
-        Animator.SetBool("IsAttacking",false);
+        RLHeadAnimator.SetBool("IsAttacking",false);
+        RLBodyAnimator.SetBool("IsAttacking",false);
     }
     private void FindAnimator()
     {
-        Animator = gameObject.GetComponent<Animator>();
+        RLHeadAnimator = gameObject.GetComponent<Animator>();
     }
 }

@@ -16,7 +16,9 @@ public class MTAmmoMovement : TowerManager
         }
     }
     private void OnCollisionEnter() {
-        Continue=false;
+        if(Continue)
+            gameObject.GetComponentInChildren<ParticleSystem>().gameObject.SetActive(false);
+        Continue=false;   
     }
     private void MoveForward()
     {

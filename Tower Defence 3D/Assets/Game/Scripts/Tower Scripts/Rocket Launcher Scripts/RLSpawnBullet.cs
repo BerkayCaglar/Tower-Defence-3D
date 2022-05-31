@@ -13,7 +13,6 @@ public class RLSpawnBullet : MonoBehaviour
     }
     private void SpawnRocketBullet()
     {
-        rLAnimationController.ResetBarrelPosition();
         Instantiate(rocketBullet,transform.position,transform.rotation);
         rLAnimationController.PlayRLAnimation();
     }
