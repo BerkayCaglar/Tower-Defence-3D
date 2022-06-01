@@ -6,6 +6,12 @@ public class RLBulletMovement : TowerManager
 {
     private float Speed = 30f;
     private bool Continue = true;
+    private ParticleSystem Expolsion;
+    private ParticleSystem Flame;
+    private void Awake() {
+        Expolsion = GameObject.Find("RL Expolsion").GetComponent<ParticleSystem>();
+        Flame = GetComponentsInChildren<ParticleSystem>()[0];
+    }
     private void Update() {
         if(Continue)
         {
@@ -16,8 +22,17 @@ public class RLBulletMovement : TowerManager
     }
     private void OnCollisionEnter(Collision other) {
         if(Continue)
-            gameObject.GetComponentInChildren<ParticleSystem>().gameObject.SetActive(false);
-        Continue=false;   
+        {
+            Continue=false;  
+            Flame.gameObject.SetActive(false);
+            StartCoroutine(WaitOneSecond());
+        }
+    }
+    IEnumerator WaitOneSecond()
+    {
+        Expolsion.Play();
+        yield return new WaitForSeconds(1f);
+        Destroy(gameObject);
     }
     private void MoveBullet()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SRBulletMovement : TowerManager
 {
-    private float Speed = 50f;
+    private float Speed = 60f;
     private bool Continue = true;
     private void Update() {
         if(Continue)
