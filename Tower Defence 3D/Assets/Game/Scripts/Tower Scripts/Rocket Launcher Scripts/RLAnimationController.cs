@@ -8,7 +8,6 @@ public class RLAnimationController : MonoBehaviour
     private Animator RLBodyAnimator;
     private void Start() {
         FindAnimator();
-        RLBodyAnimator = GameObject.Find("RLBody").GetComponent<Animator>();
     }
     public void PlayRLAnimation()
     {
@@ -23,5 +22,6 @@ public class RLAnimationController : MonoBehaviour
     private void FindAnimator()
     {
         RLHeadAnimator = gameObject.GetComponent<Animator>();
+        RLBodyAnimator = GameObject.Find("RLBody").GetComponent<Animator>();
     }
 }

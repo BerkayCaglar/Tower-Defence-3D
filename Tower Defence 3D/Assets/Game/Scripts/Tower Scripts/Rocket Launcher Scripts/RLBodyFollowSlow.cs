@@ -6,6 +6,6 @@ public class RLBodyFollowSlow : TowerManager
 {
     private void Update()
     {
-        transform.rotation=LookTargetSlow();
+        transform.rotation=LookTargetSlow(); // TowerManager.cs
     }
 }
