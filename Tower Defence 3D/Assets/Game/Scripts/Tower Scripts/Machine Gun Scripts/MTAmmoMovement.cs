@@ -6,7 +6,10 @@ public class MTAmmoMovement : TowerManager
 {
     private float Speed = 40f;
     private bool Continue = true;
-
+    [SerializeField]
+    private ParticleSystem Expolsion;
+    [SerializeField]
+    private GameObject JetEffect;
     private void Update() {
         if(Continue)
         {
@@ -15,10 +18,19 @@ public class MTAmmoMovement : TowerManager
             transform.rotation=LookTarget(); // TowerManager.cs
         }
     }
-    private void OnCollisionEnter() {
-        if(Continue)
-            gameObject.GetComponentInChildren<ParticleSystem>().gameObject.SetActive(false);
-        Continue=false;   
+    private void OnCollisionEnter(Collision other) 
+    {
+        if(Continue && other.gameObject.CompareTag("Enemy"))
+        {
+            Continue=false;
+            StartCoroutine(WaitOneSecond());
+        }
+    }
+    IEnumerator WaitOneSecond()
+    {
+        JetEffect.SetActive(false);
+        yield return new WaitForSeconds(1f);
+        RemoveTheBullet(gameObject,Expolsion);
     }
     private void MoveForward()
     {

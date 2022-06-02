@@ -4,18 +4,12 @@ using UnityEngine;
 
 public class RLBulletMovement : TowerManager
 {
-    private float Speed = 30f;
+    private float Speed = 40f;
     private bool Continue = true;
+    [SerializeField]
     private ParticleSystem Expolsion;
-    private ParticleSystem Flame;
-    private MeshRenderer RLBulletMainPart;
-    private MeshRenderer RLBulletPart1;
-    private MeshRenderer RLBulletPart2;
-    private MeshRenderer RLBulletPart3;
-    private BoxCollider RLBulletMainCollider;
-    private void Awake() {
-        FindVariables();
-    }
+    [SerializeField]
+    private GameObject JetEffect;
     private void Update() {
         if(Continue)
         {
@@ -28,40 +22,17 @@ public class RLBulletMovement : TowerManager
         if(Continue && other.gameObject.CompareTag("Enemy"))
         {
             Continue=false;  
-            Flame.gameObject.SetActive(false);
             StartCoroutine(WaitOneSecond());
         }
     }
     IEnumerator WaitOneSecond()
     {
+        JetEffect.SetActive(false);
         yield return new WaitForSeconds(1f);
-        RemoveBullet();
+        RemoveTheBullet(gameObject,Expolsion);
     }
     private void MoveBullet()
     {
         transform.Translate(Vector3.forward * Time.deltaTime * Speed);
-    }
-    private void RemoveBullet()
-    {
-        RLBulletMainPart.enabled = false;
-        RLBulletPart1.enabled = false;
-        RLBulletPart2.enabled = false;
-        RLBulletPart3.enabled = false;
-        Expolsion.transform.parent=null;
-        Expolsion.transform.localScale= new Vector3(0.5f,0.5f,0.5f);
-        RLBulletMainCollider.enabled=false;
-        Expolsion.Play();
-        Destroy(gameObject,1f);
-    }
-    private void FindVariables()
-    {
-        Expolsion = GetComponentsInChildren<ParticleSystem>()[0];
-        Flame = GetComponentsInChildren<ParticleSystem>()[1];
-
-        RLBulletMainPart = GetComponent<MeshRenderer>();
-        RLBulletPart1 = GetComponentsInChildren<MeshRenderer>()[1];
-        RLBulletPart2 = GetComponentsInChildren<MeshRenderer>()[2];
-        RLBulletPart3 = GetComponentsInChildren<MeshRenderer>()[3];
-        RLBulletMainCollider = GetComponent<BoxCollider>();
     }
 }

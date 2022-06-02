@@ -34,11 +34,13 @@ public class MTSpawnBullet : MonoBehaviour
         {
             SpawnLeftBullet();
             mTAnimationController.PlayLeftBarrelAnimation();
+            mTAnimationController.PlayBodyShakeAnimation();
         }
         else
         {
             SpawnRightBullet();
             mTAnimationController.PlayRightBarrelAnimation();
+            mTAnimationController.PlayBodyShakeAnimation();
         }
     }
     private void FindBarrelObjects()

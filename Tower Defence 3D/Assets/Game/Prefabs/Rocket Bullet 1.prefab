@@ -4918,6 +4918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e4cde4066495049a26b38895343ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Expolsion: {fileID: 2191820345516837378}
+  JetEffect: {fileID: 780764514854529683}
 --- !u!54 &-7949087066253040373
 Rigidbody:
   m_ObjectHideFlags: 0
