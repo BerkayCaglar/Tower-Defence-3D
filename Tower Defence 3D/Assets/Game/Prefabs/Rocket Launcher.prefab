@@ -519,6 +519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2338113220530627717}
   - component: {fileID: 2338113220530627718}
+  - component: {fileID: 967679856013802154}
   m_Layer: 0
   m_Name: RLBody
   m_TagString: Untagged
@@ -559,6 +560,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d31d849fa6c0cba42be871a508596374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &967679856013802154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338113220530627716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1ab211255b9944b8dd5193cd77c417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2338113220556145949

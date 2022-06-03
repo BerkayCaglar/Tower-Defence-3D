@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RLBodyFollowSlow : TowerManager
 {
+    private float LockDistance =8f;
     private void Update()
     {
-        transform.rotation=LookTargetSlow(); // TowerManager.cs
+        transform.rotation=LookTargetSlow(LockDistance); // TowerManager.cs
     }
 }

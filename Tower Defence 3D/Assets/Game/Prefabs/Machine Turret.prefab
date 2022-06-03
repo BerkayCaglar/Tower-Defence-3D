@@ -1846,6 +1846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4705737772675766000}
   - component: {fileID: 4705737772675766001}
+  - component: {fileID: 5027714929898018160}
   m_Layer: 0
   m_Name: MTBody
   m_TagString: Untagged
@@ -1880,5 +1881,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4a5d28054494fe42ba9cd950cdfc15a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5027714929898018160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4705737772675766007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea3bb7551559b048963f2be32c702d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

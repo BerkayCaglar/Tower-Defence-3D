@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SRHeadMovement : MonoBehaviour
+public class SRHeadMovement : TowerManager
 {
     private GameObject SRBody;
     private Vector3 targetPosition;
@@ -21,7 +21,7 @@ public class SRHeadMovement : MonoBehaviour
     }
     private void SetTargetPosition()
     {
-        targetPosition = SRBody.transform.position + new Vector3(0f,0.5f,0f);
+        targetPosition = SRBody.transform.position + new Vector3(0f,0.6f,0f);
     }
     private void ResetYourHead()
     {
