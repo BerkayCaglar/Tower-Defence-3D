@@ -5,6 +5,7 @@ using UnityEngine;
 public class MTAmmoMovement : TowerManager
 {
     private float Speed = 40f;
+    private float LockDistance =6f;
     private bool Continue = true;
     [SerializeField]
     private ParticleSystem Expolsion;
@@ -15,7 +16,7 @@ public class MTAmmoMovement : TowerManager
         {
             MoveForward();
             
-            transform.rotation=LookTarget(); // TowerManager.cs
+            transform.rotation=LookTarget(LockDistance); // TowerManager.cs
         }
     }
     private void OnCollisionEnter(Collision other) 

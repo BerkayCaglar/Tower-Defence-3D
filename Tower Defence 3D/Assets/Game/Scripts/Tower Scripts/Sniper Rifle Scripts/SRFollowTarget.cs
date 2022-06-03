@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class SRFollowTarget : TowerManager
 {
-    private void Update()
+    private float LockDistance =11f;
+    private void Update() 
     {
-        transform.rotation=LookTarget(); // TowerManager.cs
+        transform.rotation=LookTarget(LockDistance);// TowerManager.cs
     }
+    
 }

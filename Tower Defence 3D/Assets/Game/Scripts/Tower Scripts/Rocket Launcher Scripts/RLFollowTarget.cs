@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RLFollowTarget : TowerManager
 {
-    private void Update()
+    private float LockDistance =8f;
+    private void Update() 
     {
-        transform.rotation=LookTarget(); // TowerManager.cs
+        transform.rotation=LookTarget(LockDistance);// TowerManager.cs
     }
 }

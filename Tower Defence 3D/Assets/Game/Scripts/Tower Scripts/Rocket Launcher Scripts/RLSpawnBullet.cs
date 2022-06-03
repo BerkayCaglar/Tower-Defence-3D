@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RLSpawnBullet : MonoBehaviour
+public class RLSpawnBullet : TowerManager
 {
     [SerializeField]
     private GameObject rocketBullet;
@@ -14,7 +14,7 @@ public class RLSpawnBullet : MonoBehaviour
     private void SpawnRocketBullet()
     {
         Instantiate(rocketBullet,transform.position,transform.rotation);
-        rLAnimationController.PlayRLAnimation();
+        AnimationController(rLAnimationController.RLBodyAnimator,true,rLAnimationController.RLHeadAnimator);
     }
     private void FindRLAnimationController()
     {

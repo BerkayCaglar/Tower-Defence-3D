@@ -4,41 +4,12 @@ using UnityEngine;
 
 public class MTAnimationController : MonoBehaviour
 {
-    private Animator leftBarrelAnimator;
-    private Animator rightBarrelAnimator;
-    private Animator bodyAnimator;
-    private MTSpawnBullet mTSpawnBullet;
+    public Animator leftBarrelAnimator;
+    public Animator rightBarrelAnimator;
+    public Animator bodyAnimator;
     
     private void Start() {
         FindBarrelAnimators();
-        FindMTSpawnBullet();
-    }
-    public void PlayRightBarrelAnimation()
-    {
-        rightBarrelAnimator.SetBool("IsAttacking",true);
-        //rightBarrelAnimator.SetFloat("AnimationSpeed",mTSpawnBullet.ammoSpawnRate+1f);
-    }
-    public void PlayLeftBarrelAnimation()
-    {
-        leftBarrelAnimator.SetBool("IsAttacking",true);
-        //leftBarrelAnimator.SetFloat("AnimationSpeed",mTSpawnBullet.ammoSpawnRate+1f);
-    }
-    public void StopBarrelAnimation()
-    {
-        rightBarrelAnimator.SetBool("IsAttacking",false);
-        leftBarrelAnimator.SetBool("IsAttacking",false);
-    }
-    public void PlayBodyShakeAnimation()
-    {
-        bodyAnimator.SetBool("IsAttacking",true);
-    }
-    public void StopBodyShakeAnimation()
-    {
-        bodyAnimator.SetBool("IsAttacking",false);
-    }
-    private void FindMTSpawnBullet()
-    {
-        mTSpawnBullet = gameObject.GetComponent<MTSpawnBullet>();
     }
     private void FindBarrelAnimators()
     {

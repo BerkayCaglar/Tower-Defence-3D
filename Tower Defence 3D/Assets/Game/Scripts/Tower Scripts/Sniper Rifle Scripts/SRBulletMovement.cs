@@ -5,6 +5,7 @@ using UnityEngine;
 public class SRBulletMovement : TowerManager
 {
     private float Speed = 70f;
+    private float LockDistance =11f;
     private bool Continue = true;
     [SerializeField]
     private ParticleSystem Expolsion;
@@ -15,7 +16,7 @@ public class SRBulletMovement : TowerManager
         {
             MoveBullet();
             
-            transform.rotation=LookTarget(); // TowerManager.cs
+            transform.rotation=LookTarget(LockDistance); // TowerManager.cs
         }
     }
     private void OnCollisionEnter(Collision other) 

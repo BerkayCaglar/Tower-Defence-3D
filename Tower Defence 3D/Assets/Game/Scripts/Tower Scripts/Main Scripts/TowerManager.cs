@@ -10,10 +10,9 @@ public class TowerManager : MonoBehaviour
     {
         FindTargetObject();
     }
-    public Quaternion LookTarget()
+    public Quaternion LookTarget(float TurretDistance)
     {
         Quaternion lookDirection = Quaternion.LookRotation(Target.transform.position - transform.position);
-
         return Quaternion.Slerp(transform.rotation,lookDirection,Time.deltaTime * followSpeed);
     }
     public Quaternion LookTargetSlow()
@@ -29,6 +28,25 @@ public class TowerManager : MonoBehaviour
         Expolsion.Play();
         Destroy(gameObject);
         Destroy(Expolsion.gameObject,0.5f);
+    }
+    public void AnimationController(Animator BodyAnimator,bool DoYouWantToPlay,Animator HeadAnimator=null,Animator MTLeftBarrelAnimator = null,Animator MTRightBarrelAnimator = null,string LeftOrRight=null)
+    {
+        if(HeadAnimator !=null)
+        {
+            HeadAnimator.SetBool("IsAttacking",DoYouWantToPlay);
+        }
+        BodyAnimator.SetBool("IsAttacking",DoYouWantToPlay);
+        if(MTLeftBarrelAnimator != null && MTRightBarrelAnimator != null && LeftOrRight != null)
+        {
+            if(LeftOrRight == "left")
+            {
+                MTRightBarrelAnimator.SetBool("IsAttacking",DoYouWantToPlay);
+            }
+            else
+            {
+                MTLeftBarrelAnimator.SetBool("IsAttacking",DoYouWantToPlay);
+            }
+        }
     }
     private void FindTargetObject()
     {

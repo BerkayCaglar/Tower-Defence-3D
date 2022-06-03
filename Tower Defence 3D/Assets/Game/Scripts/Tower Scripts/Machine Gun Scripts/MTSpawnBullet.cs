@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MTSpawnBullet : MonoBehaviour
+public class MTSpawnBullet : TowerManager
 {
     [SerializeField]
     private GameObject bullet;
@@ -16,7 +16,6 @@ public class MTSpawnBullet : MonoBehaviour
         InvokeRepeating("SpawnManager",0f,0.1f);
         FindMTAnimationController();
     }
-
     private void SpawnLeftBullet()
     {
         Instantiate(bullet,leftBarrel.transform.position,gameObject.transform.rotation);
@@ -33,14 +32,12 @@ public class MTSpawnBullet : MonoBehaviour
         if (shotOpen)
         {
             SpawnLeftBullet();
-            mTAnimationController.PlayLeftBarrelAnimation();
-            mTAnimationController.PlayBodyShakeAnimation();
+            AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"left");
         }
         else
         {
             SpawnRightBullet();
-            mTAnimationController.PlayRightBarrelAnimation();
-            mTAnimationController.PlayBodyShakeAnimation();
+            AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"right");
         }
     }
     private void FindBarrelObjects()

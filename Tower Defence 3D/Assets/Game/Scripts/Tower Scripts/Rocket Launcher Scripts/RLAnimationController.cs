@@ -4,20 +4,10 @@ using UnityEngine;
 
 public class RLAnimationController : MonoBehaviour
 {
-    private Animator RLHeadAnimator;
-    private Animator RLBodyAnimator;
+    public Animator RLHeadAnimator;
+    public Animator RLBodyAnimator;
     private void Start() {
         FindAnimator();
-    }
-    public void PlayRLAnimation()
-    {
-        RLHeadAnimator.SetBool("IsAttacking",true);    
-        RLBodyAnimator.SetBool("IsAttacking",true);
-    }
-    public void StopRLAnimation()
-    {
-        RLHeadAnimator.SetBool("IsAttacking",false);
-        RLBodyAnimator.SetBool("IsAttacking",false);
     }
     private void FindAnimator()
     {

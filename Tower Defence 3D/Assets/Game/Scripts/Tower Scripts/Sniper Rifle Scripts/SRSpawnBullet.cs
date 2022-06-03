@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SRSpawnBullet : MonoBehaviour
+public class SRSpawnBullet : TowerManager
 {
     [SerializeField]
     private GameObject SRBullet;
@@ -14,7 +14,7 @@ public class SRSpawnBullet : MonoBehaviour
     private void SpawnSRBullet()
     {
         Instantiate(SRBullet,transform.position,transform.rotation);
-        sRAnimationController.PlaySRAnimation();
+        AnimationController(sRAnimationController.SRBodyAnimator,true,sRAnimationController.SRHeadAnimator);
     }
     private void FindSRAnimationController()
     {
