@@ -5,16 +5,12 @@ using UnityEngine;
 public class MTSpawnBullet : TowerManager
 {
     [SerializeField]
-    private GameObject bullet;
-    private GameObject leftBarrel;
-    private GameObject rightBarrel;
+    private GameObject bullet, leftBarrel, rightBarrel, MTBody;
     private MTAnimationController mTAnimationController;
     private MTBodyMovement mTBodyMovement;
-    private bool shotOpen=true;
-    private bool Reset;
+    private bool shotOpen=true, Reset;
     void Start()
     {
-        FindBarrelObjects();
         InvokeRepeating("SpawnManager",0f,0.1f);
         FindScripts();
     }
@@ -36,17 +32,17 @@ public class MTSpawnBullet : TowerManager
             if (shotOpen)
             {
                 SpawnLeftBullet();
-                AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"left");
+                AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"left"); // TowerManager.cs
             }
             else
             {
                 SpawnRightBullet();
-                AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"right");
+                AnimationController(mTAnimationController.bodyAnimator,true,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"right"); // TowerManager.cs
             }
         }
         else
         {
-            AnimationController(mTAnimationController.bodyAnimator,false,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"all");
+            AnimationController(mTAnimationController.bodyAnimator,false,null,mTAnimationController.leftBarrelAnimator,mTAnimationController.rightBarrelAnimator,"all"); // TowerManager.cs
             Reset = true;
         }
     }
@@ -56,15 +52,9 @@ public class MTSpawnBullet : TowerManager
             mTBodyMovement.ResetBody();
         }
     }
-    private void FindBarrelObjects()
-    {
-        leftBarrel = GameObject.Find("MT-Left Barrel");
-        rightBarrel = GameObject.Find("MT-Right Barrel");
-    }
     private void FindScripts()
     {
         mTAnimationController = gameObject.GetComponent<MTAnimationController>();
-        mTBodyMovement = GameObject.Find("MTBody").GetComponent<MTBodyMovement>();
+        mTBodyMovement = MTBody.GetComponent<MTBodyMovement>();
     }
-
 }   

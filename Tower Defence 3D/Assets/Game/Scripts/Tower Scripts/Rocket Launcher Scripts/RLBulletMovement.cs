@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class RLBulletMovement : TowerManager
 {
-    private float Speed = 40f;
-    private float LockDistance =8f;
+    private float Speed = 40f, LockDistance =8f;
     private bool Continue = true;
     [SerializeField]
     private ParticleSystem Expolsion;

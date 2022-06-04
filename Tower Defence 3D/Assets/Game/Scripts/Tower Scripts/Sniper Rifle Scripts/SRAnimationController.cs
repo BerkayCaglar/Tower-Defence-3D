@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class SRAnimationController : MonoBehaviour
 {
-    public Animator SRHeadAnimator;
-    public Animator SRBodyAnimator;
+    [SerializeField]
+    private GameObject SRBody;
+    [HideInInspector]
+    public Animator SRHeadAnimator, SRBodyAnimator;
     private void Start() {
         FindAnimator();
     }
     private void FindAnimator()
     {
         SRHeadAnimator = gameObject.GetComponent<Animator>();
-        SRBodyAnimator = GameObject.Find("SR Body").GetComponent<Animator>();
+        SRBodyAnimator = SRBody.GetComponent<Animator>();
     }
 }

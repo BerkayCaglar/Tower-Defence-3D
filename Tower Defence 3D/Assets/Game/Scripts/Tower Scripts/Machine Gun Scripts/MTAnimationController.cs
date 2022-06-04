@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class MTAnimationController : MonoBehaviour
 {
-    public Animator leftBarrelAnimator;
-    public Animator rightBarrelAnimator;
-    public Animator bodyAnimator;
+    [SerializeField]
+    private GameObject leftBarrel, rightBarrel, Body;
+    [HideInInspector]
+    public Animator leftBarrelAnimator, rightBarrelAnimator, bodyAnimator;
     
     private void Start() {
         FindBarrelAnimators();
     }
     private void FindBarrelAnimators()
     {
-        leftBarrelAnimator = GameObject.Find("MT-Left Barrel").GetComponent<Animator>();
-        rightBarrelAnimator = GameObject.Find("MT-Right Barrel").GetComponent<Animator>();
-        bodyAnimator = GameObject.Find("MTBody").GetComponent<Animator>();
+        leftBarrelAnimator = leftBarrel.GetComponent<Animator>();
+        rightBarrelAnimator = rightBarrel.GetComponent<Animator>();
+        bodyAnimator = Body.GetComponent<Animator>();
     }
 }

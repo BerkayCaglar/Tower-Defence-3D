@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class RLAnimationController : MonoBehaviour
 {
-    public Animator RLHeadAnimator;
-    public Animator RLBodyAnimator;
+    [SerializeField]
+    private GameObject RLBody, RLHead;
+    [HideInInspector]
+    public Animator RLHeadAnimator, RLBodyAnimator;
     private void Start() {
         FindAnimator();
     }
     private void FindAnimator()
     {
-        RLHeadAnimator = gameObject.GetComponent<Animator>();
-        RLBodyAnimator = GameObject.Find("RLBody").GetComponent<Animator>();
+        RLHeadAnimator = RLHead.GetComponent<Animator>();
+        RLBodyAnimator = RLBody.GetComponent<Animator>();
     }
 }

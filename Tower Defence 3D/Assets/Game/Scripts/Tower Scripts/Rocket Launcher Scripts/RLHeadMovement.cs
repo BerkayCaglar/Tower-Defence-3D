@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class RLHeadMovement : MonoBehaviour
 {
+    [SerializeField]
     private GameObject RLBody;
     private Vector3 targetPosition;
     private void Start() 
     {
-        FindRLBody();
         SetTargetPosition();
     }
     private void Update() 
     {
        ResetYourHead();
-    }
-    private void FindRLBody()
-    {
-        RLBody = GameObject.Find("RLBody");
     }
     private void SetTargetPosition()
     {

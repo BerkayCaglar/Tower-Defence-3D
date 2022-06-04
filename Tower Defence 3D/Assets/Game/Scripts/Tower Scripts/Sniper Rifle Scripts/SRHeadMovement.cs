@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class SRHeadMovement : TowerManager
 {
+    [SerializeField]
     private GameObject SRBody;
     private Vector3 targetPosition;
     private void Start() 
     {
-        FindSRBody();
         SetTargetPosition();
     }
     private void Update() 
     {
        ResetYourHead();
-    }
-    private void FindSRBody()
-    {
-        SRBody = GameObject.Find("SR Body");
     }
     private void SetTargetPosition()
     {

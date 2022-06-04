@@ -5,7 +5,7 @@ using UnityEngine;
 public class SRSpawnBullet : TowerManager
 {
     [SerializeField]
-    private GameObject SRBullet;
+    private GameObject SRBullet, SRHead, SRBody;
     private SRBodyMovement sRBodyMovement;
     private SRAnimationController sRAnimationController;
     private bool Reset;
@@ -34,7 +34,7 @@ public class SRSpawnBullet : TowerManager
     }
     private void FindScripts()
     {
-        sRAnimationController = GameObject.Find("SR Head").GetComponent<SRAnimationController>();
-        sRBodyMovement = GameObject.Find("SR Body").GetComponent<SRBodyMovement>();
+        sRAnimationController = SRHead.GetComponent<SRAnimationController>();
+        sRBodyMovement = SRBody.GetComponent<SRBodyMovement>();
     }
 }

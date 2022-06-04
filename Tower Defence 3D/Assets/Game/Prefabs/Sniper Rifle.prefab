@@ -1635,6 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24038b1a583f6c4d816dce9acbb5b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SRBody: {fileID: 8078167842748531880}
 --- !u!114 &8078167842380278081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1647,6 +1648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428799af710ddac4ca387fddbf35cef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SRBody: {fileID: 8078167842748531880}
   SRHeadAnimator: {fileID: 0}
   SRBodyAnimator: {fileID: 0}
 --- !u!1 &8078167842383774948
@@ -3011,3 +3013,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SRBullet: {fileID: 2952439100463200936, guid: 3da8f88f252f626479d1a283b1662159, type: 3}
+  SRHead: {fileID: 8078167842380278086}
+  SRBody: {fileID: 8078167842748531880}

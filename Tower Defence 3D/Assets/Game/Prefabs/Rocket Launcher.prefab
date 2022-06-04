@@ -520,6 +520,7 @@ GameObject:
   - component: {fileID: 2338113220530627717}
   - component: {fileID: 2338113220530627718}
   - component: {fileID: 967679856013802154}
+  - component: {fileID: 3803995051789999691}
   m_Layer: 0
   m_Name: RLBody
   m_TagString: Untagged
@@ -574,6 +575,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1ab211255b9944b8dd5193cd77c417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &3803995051789999691
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2338113220530627716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b4ce68ac85303047b7182e4f39f2d8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2338113220556145949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,6 +1780,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rocketBullet: {fileID: 1938634317197713897, guid: 5ef26aaf12115694abdcbb529fb6e13b, type: 3}
+  RLHead: {fileID: 2338113222113443655}
+  RLBody: {fileID: 2338113220530627716}
 --- !u!1 &2338113222105120303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1985,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: da51cc4c3cc9d4142b166848b0b2899e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -1993,6 +2015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbc480e8b3f928041b81b06362b9da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RLBody: {fileID: 2338113220530627716}
+  RLHead: {fileID: 2338113222113443655}
   RLHeadAnimator: {fileID: 0}
   RLBodyAnimator: {fileID: 0}
 --- !u!114 &2338113222113443663
@@ -2007,6 +2031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4ad43084e3c8c42adab9724edc958b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RLBody: {fileID: 2338113220530627716}
 --- !u!1 &2338113222320764728
 GameObject:
   m_ObjectHideFlags: 0
