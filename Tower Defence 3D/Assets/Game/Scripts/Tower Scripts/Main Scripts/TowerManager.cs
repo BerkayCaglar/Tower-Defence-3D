@@ -7,7 +7,7 @@ public class TowerManager : MonoBehaviour
     private GameObject Target;
     private float followSpeed = 20f;
     private float turretDistance;
-    private void Start() 
+    private void Awake() 
     {
         //FindTargetObject();
         InvokeRepeating("FindTargets",0f,0.5f);
@@ -39,6 +39,7 @@ public class TowerManager : MonoBehaviour
     }
     public Quaternion LookTargetSlow(float TurretDistance)
     {
+        Debug.Log(Target);
         if(Target !=null)
         {
             
