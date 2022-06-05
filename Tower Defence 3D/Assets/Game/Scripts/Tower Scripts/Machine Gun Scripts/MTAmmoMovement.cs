@@ -15,7 +15,7 @@ public class MTAmmoMovement : TowerManager
         {
             MoveForward();
             
-            transform.rotation=LookTarget(LockDistance); // TowerManager.cs
+            //transform.rotation=LookTarget(LockDistance); // TowerManager.cs
         }
     }
     private void OnCollisionEnter(Collision other) 
@@ -34,6 +34,6 @@ public class MTAmmoMovement : TowerManager
     }
     private void MoveForward()
     {
-        gameObject.transform.Translate(Vector3.forward * Speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * Speed * Time.deltaTime);
     }
 }

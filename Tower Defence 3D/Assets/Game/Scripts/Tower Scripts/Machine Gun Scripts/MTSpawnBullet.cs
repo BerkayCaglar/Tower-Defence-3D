@@ -9,6 +9,7 @@ public class MTSpawnBullet : TowerManager
     private MTAnimationController mTAnimationController;
     private MTBodyMovement mTBodyMovement;
     private bool shotOpen=true, Reset;
+    public bool Firing;
     void Start()
     {
         InvokeRepeating("SpawnManager",0f,0.1f);
@@ -27,7 +28,7 @@ public class MTSpawnBullet : TowerManager
     
     private void SpawnManager()
     {
-        if(transform.rotation.y > 0 || transform.rotation.y < 0)
+        if(Firing)
         {
             if (shotOpen)
             {

@@ -9,13 +9,14 @@ public class RLSpawnBullet : TowerManager
     private RLAnimationController rLAnimationController;
     private RLBodyMovement rLBodyMovement;
     private bool Reset;
+    public bool Firing;
     private void Start() {
         InvokeRepeating("SpawnRocketBullet",0f,1f);   
         FindScripts(); 
     }
     private void SpawnRocketBullet()
     {
-        if(transform.rotation.y > 0 || transform.rotation.y < 0)
+        if(Firing)
         {
             Instantiate(rocketBullet,transform.position,transform.rotation);
             AnimationController(rLAnimationController.RLBodyAnimator,true,rLAnimationController.RLHeadAnimator);

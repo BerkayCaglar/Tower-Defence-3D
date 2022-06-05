@@ -15,7 +15,7 @@ public class SRBulletMovement : TowerManager
         {
             MoveBullet();
             
-            transform.rotation=LookTarget(LockDistance); // TowerManager.cs
+           //transform.rotation=LookTarget(LockDistance); // TowerManager.cs
         }
     }
     private void OnCollisionEnter(Collision other) 

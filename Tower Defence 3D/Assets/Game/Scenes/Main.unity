@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket Launcher
       objectReference: {fileID: 0}
+    - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2338113220556145950, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -190,6 +194,10 @@ PrefabInstance:
     - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_Name
       value: Rocket Launcher (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2338113220556145950, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_RootOrder
@@ -254,7 +262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3010881633830231642, guid: b7097ec8847e47b4d8d46f75556d7825, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.23
+      value: -17.18
       objectReference: {fileID: 0}
     - target: {fileID: 3010881633830231642, guid: b7097ec8847e47b4d8d46f75556d7825, type: 3}
       propertyPath: m_LocalPosition.y
@@ -313,6 +321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machine Turret (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4705737770812017105, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4705737770812017106, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -369,6 +381,10 @@ PrefabInstance:
     - target: {fileID: 8078167841973921356, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
       propertyPath: m_Name
       value: Sniper Rifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078167841973921356, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078167841973921357, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
       propertyPath: m_RootOrder
@@ -862,6 +878,10 @@ PrefabInstance:
     - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_Name
       value: Rocket Launcher (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2338113220556145950, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_RootOrder
@@ -1486,6 +1506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Machine Turret (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4705737770812017105, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4705737770812017106, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1530,6 +1554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4705737772250275660, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 68c4799d2e27df447a2e5879efe214c0, type: 3}
 --- !u!1001 &1907074001
@@ -1542,6 +1570,10 @@ PrefabInstance:
     - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_Name
       value: Rocket Launcher (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2338113220556145949, guid: 7163f23d4151a094084858c110c0f331, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2338113220556145950, guid: 7163f23d4151a094084858c110c0f331, type: 3}
       propertyPath: m_RootOrder
@@ -1599,6 +1631,10 @@ PrefabInstance:
     - target: {fileID: 8078167841973921356, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
       propertyPath: m_Name
       value: Sniper Rifle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8078167841973921356, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8078167841973921357, guid: 36018e5ba4382a44997aed94c8346219, type: 3}
       propertyPath: m_RootOrder
@@ -1663,7 +1699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3010881633830231642, guid: b7097ec8847e47b4d8d46f75556d7825, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17
+      value: -18.62
       objectReference: {fileID: 0}
     - target: {fileID: 3010881633830231642, guid: b7097ec8847e47b4d8d46f75556d7825, type: 3}
       propertyPath: m_LocalPosition.y

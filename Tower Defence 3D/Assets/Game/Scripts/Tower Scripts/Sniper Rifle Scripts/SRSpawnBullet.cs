@@ -9,13 +9,14 @@ public class SRSpawnBullet : TowerManager
     private SRBodyMovement sRBodyMovement;
     private SRAnimationController sRAnimationController;
     private bool Reset;
+    public bool Firing;
     private void Start() {
         InvokeRepeating("SpawnSRBullet",0f,2f);   
         FindScripts(); 
     }
     private void SpawnSRBullet()
     {
-        if(transform.rotation.y > 0 || transform.rotation.y < 0)
+        if(Firing)
         {
             Instantiate(SRBullet,transform.position,transform.rotation);
             AnimationController(sRAnimationController.SRBodyAnimator,true,sRAnimationController.SRHeadAnimator);
