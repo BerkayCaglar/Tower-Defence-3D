@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 8078167841217758320}
   - component: {fileID: 8078167841217758319}
   - component: {fileID: 8078167841217758318}
-  - component: {fileID: 8078167841217758321}
   m_Layer: 0
   m_Name: SRH Corner 3
   m_TagString: Untagged
@@ -116,19 +115,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841217758321
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841217758323}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841330579634
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,7 +126,6 @@ GameObject:
   - component: {fileID: 8078167841330579635}
   - component: {fileID: 8078167841330579630}
   - component: {fileID: 8078167841330579633}
-  - component: {fileID: 8078167841330579632}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -211,19 +196,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841330579632
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841330579634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841371914450
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,7 +207,6 @@ GameObject:
   - component: {fileID: 8078167841371914451}
   - component: {fileID: 8078167841371914446}
   - component: {fileID: 8078167841371914449}
-  - component: {fileID: 8078167841371914448}
   m_Layer: 0
   m_Name: SR Barrel
   m_TagString: Untagged
@@ -311,19 +282,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841371914448
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841371914450}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841388620912
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +293,6 @@ GameObject:
   - component: {fileID: 8078167841388620913}
   - component: {fileID: 8078167841388620908}
   - component: {fileID: 8078167841388620911}
-  - component: {fileID: 8078167841388620910}
   m_Layer: 0
   m_Name: SRH Main Cube Mini 3
   m_TagString: Untagged
@@ -406,19 +363,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841388620910
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841388620912}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841494430789
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +374,6 @@ GameObject:
   - component: {fileID: 8078167841494430786}
   - component: {fileID: 8078167841494430785}
   - component: {fileID: 8078167841494430784}
-  - component: {fileID: 8078167841494430787}
   m_Layer: 0
   m_Name: SRH Corner 5
   m_TagString: Untagged
@@ -501,19 +444,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841494430787
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841494430789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841547766268
 GameObject:
   m_ObjectHideFlags: 0
@@ -525,7 +455,6 @@ GameObject:
   - component: {fileID: 8078167841547766269}
   - component: {fileID: 8078167841547766264}
   - component: {fileID: 8078167841547766267}
-  - component: {fileID: 8078167841547766266}
   m_Layer: 0
   m_Name: SRB Main Cube Mini 4
   m_TagString: Untagged
@@ -596,19 +525,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841547766266
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841547766268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841555817670
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +536,6 @@ GameObject:
   - component: {fileID: 8078167841555817671}
   - component: {fileID: 8078167841555817666}
   - component: {fileID: 8078167841555817669}
-  - component: {fileID: 8078167841555817668}
   m_Layer: 0
   m_Name: SRB Main Cube Mini 3
   m_TagString: Untagged
@@ -691,19 +606,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841555817668
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841555817670}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841648559616
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +617,6 @@ GameObject:
   - component: {fileID: 8078167841648559617}
   - component: {fileID: 8078167841648559676}
   - component: {fileID: 8078167841648559679}
-  - component: {fileID: 8078167841648559678}
   m_Layer: 0
   m_Name: SRH Corner 2
   m_TagString: Untagged
@@ -786,19 +687,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841648559678
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841648559616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841682196606
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +698,6 @@ GameObject:
   - component: {fileID: 8078167841682196607}
   - component: {fileID: 8078167841682196602}
   - component: {fileID: 8078167841682196605}
-  - component: {fileID: 8078167841682196604}
   m_Layer: 0
   m_Name: SR Barrel Corner 2
   m_TagString: Untagged
@@ -881,19 +768,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841682196604
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841682196606}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841698100232
 GameObject:
   m_ObjectHideFlags: 0
@@ -905,7 +779,6 @@ GameObject:
   - component: {fileID: 8078167841698100233}
   - component: {fileID: 8078167841698100228}
   - component: {fileID: 8078167841698100231}
-  - component: {fileID: 8078167841698100230}
   m_Layer: 0
   m_Name: SRH Main Cube Mini 2
   m_TagString: Untagged
@@ -976,19 +849,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841698100230
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841698100232}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841759834225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +860,6 @@ GameObject:
   - component: {fileID: 8078167841759834222}
   - component: {fileID: 8078167841759834221}
   - component: {fileID: 8078167841759834220}
-  - component: {fileID: 8078167841759834223}
   m_Layer: 0
   m_Name: SRH Corner
   m_TagString: Untagged
@@ -1071,19 +930,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167841759834223
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167841759834225}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167841901524232
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,7 +1042,6 @@ GameObject:
   - component: {fileID: 8078167842140124166}
   - component: {fileID: 8078167842140124165}
   - component: {fileID: 8078167842140124164}
-  - component: {fileID: 8078167842140124167}
   m_Layer: 0
   m_Name: SRB Main Cube Mini
   m_TagString: Untagged
@@ -1267,19 +1112,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842140124167
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842140124169}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842164702354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1291,7 +1123,6 @@ GameObject:
   - component: {fileID: 8078167842164702355}
   - component: {fileID: 8078167842164702350}
   - component: {fileID: 8078167842164702353}
-  - component: {fileID: 8078167842164702352}
   m_Layer: 0
   m_Name: SRB Main Cube Mini 2
   m_TagString: Untagged
@@ -1362,19 +1193,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842164702352
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842164702354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842247866621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,7 +1204,6 @@ GameObject:
   - component: {fileID: 8078167842247866618}
   - component: {fileID: 8078167842247866617}
   - component: {fileID: 8078167842247866616}
-  - component: {fileID: 8078167842247866619}
   m_Layer: 0
   m_Name: SRH Corner 7
   m_TagString: Untagged
@@ -1457,19 +1274,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842247866619
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842247866621}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842361843896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1466,6 @@ GameObject:
   - component: {fileID: 8078167842383774949}
   - component: {fileID: 8078167842383774944}
   - component: {fileID: 8078167842383774947}
-  - component: {fileID: 8078167842383774946}
   m_Layer: 0
   m_Name: SRH Corner 4
   m_TagString: Untagged
@@ -1733,19 +1536,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842383774946
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842383774948}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842468699957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1547,6 @@ GameObject:
   - component: {fileID: 8078167842468699954}
   - component: {fileID: 8078167842468699953}
   - component: {fileID: 8078167842468699952}
-  - component: {fileID: 8078167842468699955}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -1828,19 +1617,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842468699955
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842468699957}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842472053524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1852,7 +1628,6 @@ GameObject:
   - component: {fileID: 8078167842472053525}
   - component: {fileID: 8078167842472053520}
   - component: {fileID: 8078167842472053523}
-  - component: {fileID: 8078167842472053522}
   m_Layer: 0
   m_Name: SR Body Main Cube
   m_TagString: Untagged
@@ -1923,19 +1698,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842472053522
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842472053524}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842718934094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2060,7 +1822,6 @@ GameObject:
   - component: {fileID: 8078167842791676342}
   - component: {fileID: 8078167842791676341}
   - component: {fileID: 8078167842791676340}
-  - component: {fileID: 8078167842791676343}
   m_Layer: 0
   m_Name: SRB Corner 4
   m_TagString: Untagged
@@ -2131,19 +1892,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842791676343
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842791676345}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842801060967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,7 +1903,6 @@ GameObject:
   - component: {fileID: 8078167842801060964}
   - component: {fileID: 8078167842801060963}
   - component: {fileID: 8078167842801060962}
-  - component: {fileID: 8078167842801060965}
   m_Layer: 0
   m_Name: SRB Corner 2
   m_TagString: Untagged
@@ -2226,19 +1973,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842801060965
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842801060967}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842952450779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,7 +1984,6 @@ GameObject:
   - component: {fileID: 8078167842952450776}
   - component: {fileID: 8078167842952450775}
   - component: {fileID: 8078167842952450774}
-  - component: {fileID: 8078167842952450777}
   m_Layer: 0
   m_Name: SRB Corner
   m_TagString: Untagged
@@ -2321,19 +2054,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842952450777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842952450779}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167842978710401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,7 +2065,6 @@ GameObject:
   - component: {fileID: 8078167842978710462}
   - component: {fileID: 8078167842978710461}
   - component: {fileID: 8078167842978710460}
-  - component: {fileID: 8078167842978710463}
   m_Layer: 0
   m_Name: SR Barrel Crossair
   m_TagString: Untagged
@@ -2416,19 +2135,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167842978710463
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167842978710401}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843013376941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,7 +2146,6 @@ GameObject:
   - component: {fileID: 8078167843013376938}
   - component: {fileID: 8078167843013376937}
   - component: {fileID: 8078167843013376936}
-  - component: {fileID: 8078167843013376939}
   m_Layer: 0
   m_Name: SRH Corner 6
   m_TagString: Untagged
@@ -2511,19 +2216,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843013376939
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843013376941}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843149087328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,7 +2227,6 @@ GameObject:
   - component: {fileID: 8078167843149087329}
   - component: {fileID: 8078167843149087260}
   - component: {fileID: 8078167843149087263}
-  - component: {fileID: 8078167843149087262}
   m_Layer: 0
   m_Name: SRH Main Cube Mini
   m_TagString: Untagged
@@ -2606,19 +2297,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843149087262
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843149087328}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843217892889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2630,7 +2308,6 @@ GameObject:
   - component: {fileID: 8078167843217892886}
   - component: {fileID: 8078167843217892885}
   - component: {fileID: 8078167843217892884}
-  - component: {fileID: 8078167843217892887}
   m_Layer: 0
   m_Name: SRH Main Cube Mini 4
   m_TagString: Untagged
@@ -2701,19 +2378,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843217892887
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843217892889}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843218592061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2725,7 +2389,6 @@ GameObject:
   - component: {fileID: 8078167843218592058}
   - component: {fileID: 8078167843218592057}
   - component: {fileID: 8078167843218592056}
-  - component: {fileID: 8078167843218592059}
   m_Layer: 0
   m_Name: SR Barrel Corner
   m_TagString: Untagged
@@ -2796,19 +2459,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843218592059
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843218592061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843275577056
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,7 +2470,6 @@ GameObject:
   - component: {fileID: 8078167843275577057}
   - component: {fileID: 8078167843275576988}
   - component: {fileID: 8078167843275576991}
-  - component: {fileID: 8078167843275576990}
   m_Layer: 0
   m_Name: SRB Corner 3
   m_TagString: Untagged
@@ -2891,19 +2540,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843275576990
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843275577056}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8078167843277203530
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,7 +2551,6 @@ GameObject:
   - component: {fileID: 8078167843277203531}
   - component: {fileID: 8078167843277203527}
   - component: {fileID: 8078167843277203526}
-  - component: {fileID: 8078167843277203529}
   - component: {fileID: 8078167843277203528}
   m_Layer: 0
   m_Name: Cube
@@ -2987,19 +2622,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8078167843277203529
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078167843277203530}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8078167843277203528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3015,3 +2637,4 @@ MonoBehaviour:
   SRBullet: {fileID: 2952439100463200936, guid: 3da8f88f252f626479d1a283b1662159, type: 3}
   SRHead: {fileID: 8078167842380278086}
   SRBody: {fileID: 8078167842748531880}
+  Firing: 0

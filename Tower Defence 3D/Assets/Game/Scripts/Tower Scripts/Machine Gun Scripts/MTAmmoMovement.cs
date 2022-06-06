@@ -10,6 +10,10 @@ public class MTAmmoMovement : TowerManager
     private ParticleSystem Expolsion;
     [SerializeField]
     private GameObject JetEffect;
+    private void Start() 
+    {
+        Destroy(gameObject,5f);
+    }
     private void Update() {
         if(Continue)
         {
@@ -30,7 +34,7 @@ public class MTAmmoMovement : TowerManager
     {
         JetEffect.SetActive(false);
         yield return new WaitForSeconds(1f);
-        RemoveTheBullet(gameObject,Expolsion);
+        RemoveTheBullet(gameObject,Expolsion);// TowerManager.cs
     }
     private void MoveForward()
     {

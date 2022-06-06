@@ -7,24 +7,23 @@ public class TowerManager : MonoBehaviour
     private GameObject Target;
     private float followSpeed = 20f;
     private float turretDistance;
-    private void Awake() 
+    private void Start() 
     {
         //FindTargetObject();
         InvokeRepeating("FindTargets",0f,0.5f);
     }
     public Quaternion LookTarget(float TurretDistance,MTSpawnBullet mTSpawnBullet=null,RLSpawnBullet rLSpawnBullet=null,SRSpawnBullet sRSpawnBullet=null)
     {
+        turretDistance = TurretDistance;
         if(Target !=null)
         {
             if(Vector3.Distance(Target.transform.position, transform.position) > TurretDistance)
             {
-                turretDistance = TurretDistance;
                 SetScriptVariables(mTSpawnBullet,rLSpawnBullet,sRSpawnBullet,false);
                 return Quaternion.Slerp(transform.rotation,new Quaternion(0f,0f,0f,1f),Time.deltaTime*2f);
             }
             else
             {
-                turretDistance = TurretDistance;
                 SetScriptVariables(mTSpawnBullet,rLSpawnBullet,sRSpawnBullet,true);
                 Quaternion lookDirection = Quaternion.LookRotation(Target.transform.position - transform.position);
                 return Quaternion.Slerp(transform.rotation,lookDirection,Time.deltaTime * followSpeed);
@@ -32,17 +31,15 @@ public class TowerManager : MonoBehaviour
         }
         else
         {
-            turretDistance = TurretDistance;
             SetScriptVariables(mTSpawnBullet,rLSpawnBullet,sRSpawnBullet,false);
             return Quaternion.Slerp(transform.rotation,new Quaternion(0f,0f,0f,1f),Time.deltaTime*2f);
         }
     }
     public Quaternion LookTargetSlow(float TurretDistance)
     {
-        Debug.Log(Target);
+        turretDistance = TurretDistance;
         if(Target !=null)
         {
-            
             if(Vector3.Distance(Target.transform.position, transform.position) > TurretDistance)
             {
                 return Quaternion.Slerp(transform.rotation,new Quaternion(0f,0f,0f,1f),Time.deltaTime);

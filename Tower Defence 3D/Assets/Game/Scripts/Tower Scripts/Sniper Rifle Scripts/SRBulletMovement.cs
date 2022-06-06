@@ -10,6 +10,10 @@ public class SRBulletMovement : TowerManager
     private ParticleSystem Expolsion;
     [SerializeField]
     private GameObject JetEffect;
+    private void Start() 
+    {
+        Destroy(gameObject,5f);
+    }
     private void Update() {
         if(Continue)
         {
