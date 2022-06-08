@@ -21,6 +21,7 @@ public class BuildingSystem : MonoBehaviour
             Debug.Log("You Cant Build!");
             return;
         }
+        turret = Instantiate(BuildManager.BuildManagerInstance.GetTurretToBuild(),transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
     }
     private void OnMouseEnter() 
     {
