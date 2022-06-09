@@ -10,6 +10,7 @@ public class BuildingSystem : MonoBehaviour
     private Material mainMaterial,borderMaterial,cornerMaterial;
     private Renderer[] children;
     private GameObject turret;
+    public GameObject bottomUI;
     private void Start() 
     {
         children = GetComponentsInChildren<Renderer>();
@@ -21,7 +22,8 @@ public class BuildingSystem : MonoBehaviour
             Debug.Log("You Cant Build!");
             return;
         }
-        turret = Instantiate(BuildManager.BuildManagerInstance.GetTurretToBuild(),transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
+        //  Instantiate(BuildManager.BuildManagerInstance.GetTurretToBuild(),transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
+        bottomUI.SetActive(true);
     }
     private void OnMouseEnter() 
     {
@@ -48,4 +50,19 @@ public class BuildingSystem : MonoBehaviour
             }
         }
     }
+    /*
+    private void SpawnTurret()
+    {
+        if(BuildManager.BuildManagerInstance.ReturnTurretBool())
+        {
+            foreach (GameObject i in Turrets)
+            {
+                if(i.name == BuildManager.BuildManagerInstance.ReturnGettedTurret())
+                {
+                    Instantiate(i,transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
+                }
+            }
+        }
+    }
+    */
 }

@@ -18,6 +18,5 @@ public class TurretUIMovement : MonoBehaviour
             Quaternion lookCamera = Quaternion.LookRotation(transform.position - cam.position);
             transform.rotation = Quaternion.Slerp(transform.rotation,lookCamera,Time.deltaTime);    
         }
-        
     }
 }

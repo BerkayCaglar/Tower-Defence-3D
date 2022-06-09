@@ -6,8 +6,6 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager BuildManagerInstance;
 
-    [SerializeField]
-    public GameObject turretToBuild;
     private void Awake() 
     {
         if(BuildManagerInstance != null)
@@ -16,9 +14,5 @@ public class BuildManager : MonoBehaviour
             return;
         }
         BuildManagerInstance = this;
-    }
-    public GameObject GetTurretToBuild()
-    {
-        return turretToBuild;
     }
 }
