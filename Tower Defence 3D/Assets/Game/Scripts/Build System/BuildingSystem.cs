@@ -11,19 +11,33 @@ public class BuildingSystem : MonoBehaviour
     private Renderer[] children;
     private GameObject turret;
     public GameObject bottomUI;
+    private bool times = false,oneTime =false;
+    private GameObject selectedBottomGameObject;
+    public GameObject[] Turrets;
     private void Start() 
     {
         children = GetComponentsInChildren<Renderer>();
+        InvokeRepeating("SpawnTurret",0f,0.2f);
     }
+
+    [System.Obsolete]
     private void OnMouseDown() 
     {
-        if(turret != null)
-        {
-            Debug.Log("You Cant Build!");
-            return;
-        }
         //  Instantiate(BuildManager.BuildManagerInstance.GetTurretToBuild(),transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
-        bottomUI.SetActive(true);
+
+        if(bottomUI.active == false)
+        {
+            bottomUI.SetActive(true);
+            selectedBottomGameObject=gameObject;
+            oneTime = false;
+            times = true;
+        }
+        else
+        {
+            bottomUI.SetActive(false);
+            selectedBottomGameObject=null;
+            times = false;
+        }
     }
     private void OnMouseEnter() 
     {
@@ -50,19 +64,28 @@ public class BuildingSystem : MonoBehaviour
             }
         }
     }
-    /*
+
+    [System.Obsolete]
     private void SpawnTurret()
     {
-        if(BuildManager.BuildManagerInstance.ReturnTurretBool())
+        if(BuildManager.BuildManagerInstance.selectedTurret == "Delete" && !bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent != null)
         {
+            oneTime = true;
+            GameObject tempGameObject=selectedBottomGameObject.transform.parent.gameObject;
+            selectedBottomGameObject.transform.parent = null;
+            Destroy(tempGameObject);
+            return;
+        }
+        if(!bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent == null)
+        {
+            oneTime = true;
             foreach (GameObject i in Turrets)
             {
-                if(i.name == BuildManager.BuildManagerInstance.ReturnGettedTurret())
+                if(i.name == BuildManager.BuildManagerInstance.selectedTurret)
                 {
-                    Instantiate(i,transform.position + new Vector3(0f,0.75f,0f),transform.rotation);
+                    selectedBottomGameObject.transform.SetParent(Instantiate(i,selectedBottomGameObject.transform.position + new Vector3(0f,0.75f,0f),i.transform.rotation).transform);
                 }
             }
         }
     }
-    */
 }
