@@ -68,15 +68,15 @@ public class BuildingSystem : MonoBehaviour
     [System.Obsolete]
     private void SpawnTurret()
     {
-        if(BuildManager.BuildManagerInstance.selectedTurret == "Delete" && !bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent != null)
+        if(BuildManager.BuildManagerInstance.selectedTurret == "Delete" && !bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent.name != "Placement")
         {
             oneTime = true;
             GameObject tempGameObject=selectedBottomGameObject.transform.parent.gameObject;
-            selectedBottomGameObject.transform.parent = null;
+            selectedBottomGameObject.transform.parent = GameObject.Find("Placements").transform;
             Destroy(tempGameObject);
             return;
         }
-        if(!bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent == null)
+        if(!bottomUI.active && selectedBottomGameObject !=null && !oneTime)
         {
             oneTime = true;
             foreach (GameObject i in Turrets)
