@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MTLockTarget : TowerManager
 {
-    private float LockDistance =6f;
+    private float LockDistance =8f;
     private MTSpawnBullet mTSpawnBullet;
     private void Awake() {
         mTSpawnBullet = GetComponent<MTSpawnBullet>();

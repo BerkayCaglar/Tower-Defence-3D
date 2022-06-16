@@ -9,11 +9,12 @@ public class BuildingSystem : MonoBehaviour
     [SerializeField]
     private Material mainMaterial,borderMaterial,cornerMaterial;
     private Renderer[] children;
-    private GameObject turret;
     public GameObject bottomUI;
     private bool times = false,oneTime =false;
     private GameObject selectedBottomGameObject;
     public GameObject[] Turrets;
+    
+    private GameObject tempGameObject;
     private void Start() 
     {
         children = GetComponentsInChildren<Renderer>();
@@ -27,6 +28,10 @@ public class BuildingSystem : MonoBehaviour
 
         if(bottomUI.active == false)
         {
+            if(selectedBottomGameObject != null)
+            {
+                selectedBottomGameObject = null;
+            }
             bottomUI.SetActive(true);
             selectedBottomGameObject=gameObject;
             oneTime = false;
@@ -68,16 +73,17 @@ public class BuildingSystem : MonoBehaviour
     [System.Obsolete]
     private void SpawnTurret()
     {
-        if(BuildManager.BuildManagerInstance.selectedTurret == "Delete" && !bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent.name != "Placement")
+        
+        if(BuildManager.BuildManagerInstance.selectedTurret == "Delete" && !bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent.name != "Placements")
         {
             oneTime = true;
-            GameObject tempGameObject=selectedBottomGameObject.transform.parent.gameObject;
-            selectedBottomGameObject.transform.parent = GameObject.Find("Placements").transform;
-            Destroy(tempGameObject);
+            BuildManager.BuildManagerInstance.bottomGameObject.transform.parent = GameObject.Find("Placements").transform;
+            Destroy(BuildManager.BuildManagerInstance.deleteObject);
             return;
         }
-        if(!bottomUI.active && selectedBottomGameObject !=null && !oneTime)
+        if(!bottomUI.active && selectedBottomGameObject !=null && !oneTime && selectedBottomGameObject.transform.parent.name == "Placements")
         {
+            
             oneTime = true;
             foreach (GameObject i in Turrets)
             {

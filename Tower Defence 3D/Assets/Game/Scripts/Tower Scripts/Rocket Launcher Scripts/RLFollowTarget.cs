@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RLFollowTarget : TowerManager
 {
-    private float LockDistance =8f; 
+    private float LockDistance =10f; 
     private RLSpawnBullet rLSpawnBullet;
     private void Awake() {
         rLSpawnBullet = GetComponentInChildren<RLSpawnBullet>();

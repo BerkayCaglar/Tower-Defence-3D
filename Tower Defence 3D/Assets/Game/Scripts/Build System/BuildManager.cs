@@ -7,6 +7,8 @@ public class BuildManager : MonoBehaviour
     public static BuildManager BuildManagerInstance;
     [HideInInspector]
     public string selectedTurret;
+    [HideInInspector]
+    public GameObject deleteObject,bottomGameObject;
     private void Awake() 
     {
         if(BuildManagerInstance != null)
@@ -20,8 +22,13 @@ public class BuildManager : MonoBehaviour
     {
         UI.SetActive(ActiveOrPass);
     }
-    public void SetSelectedTurret(string turret)
+    public void SetSelectedTurret(string turret,GameObject deletingObject = null,GameObject bottomObject=null)
     {
         selectedTurret = turret;
+        if(deletingObject != null && bottomObject != null)
+        {
+            deleteObject = deletingObject.transform.parent.gameObject.transform.parent.gameObject;
+            bottomGameObject = bottomObject;
+        }
     }
 }

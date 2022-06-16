@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SRFollowTarget : TowerManager
 {
-    private float LockDistance =11f;
+    private float LockDistance =14f;
     private SRSpawnBullet sRSpawnBullet;
     private void Awake() {
         sRSpawnBullet = GetComponentInChildren<SRSpawnBullet>();

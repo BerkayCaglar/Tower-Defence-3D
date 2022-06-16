@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SRBulletMovement : TowerManager
 {
-    private float Speed = 70f,LockDistance =11f;
+    private float Speed = 70f;
     private bool Continue = true;
     [SerializeField]
     private ParticleSystem Expolsion;

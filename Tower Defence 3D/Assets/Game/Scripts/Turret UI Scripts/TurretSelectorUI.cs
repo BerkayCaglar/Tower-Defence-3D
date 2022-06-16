@@ -33,7 +33,7 @@ public class TurretSelectorUI : MonoBehaviour,IPointerClickHandler,IPointerExitH
             }
             if(gameObject.name == "MiddleTop")
             {
-                BuildManager.BuildManagerInstance.SetSelectedTurret("Delete");
+                BuildManager.BuildManagerInstance.SetSelectedTurret("Delete",transform.parent.gameObject,transform.parent.gameObject.transform.parent.gameObject);
             }
         }
     }
