@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    private GameObject[] Enemies;
+    [HideInInspector]
+    public float enemiesSpawned { get; private set; }
     void Start()
     {
-        
+        InvokeRepeating("Spawner",0f,1f);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Spawner()
     {
-        
+        if(enemiesSpawned <= 15)
+        {
+            Instantiate(Enemies[0],transform.position,Enemies[0].transform.rotation);
+            enemiesSpawned ++;
+        }
+        else
+        {
+            CancelInvoke("Spawner");
+        }   
     }
 }
