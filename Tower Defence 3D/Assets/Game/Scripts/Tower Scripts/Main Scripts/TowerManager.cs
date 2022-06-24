@@ -10,7 +10,7 @@ public class TowerManager : MonoBehaviour
     private void Start() 
     {
         //FindTargetObject();
-        InvokeRepeating("FindTargets",0f,0.5f);
+        InvokeRepeating("FindTargets",0f,0.1f);
     }
     public Quaternion LookTarget(float TurretDistance,MTSpawnBullet mTSpawnBullet=null,RLSpawnBullet rLSpawnBullet=null,SRSpawnBullet sRSpawnBullet=null)
     {

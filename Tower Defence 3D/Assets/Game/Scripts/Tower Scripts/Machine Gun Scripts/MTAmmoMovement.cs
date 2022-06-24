@@ -27,6 +27,8 @@ public class MTAmmoMovement : TowerManager
         if(Continue && other.gameObject.CompareTag("Enemy"))
         {
             Continue=false;
+            EnemyLife enemyLifeScript=other.gameObject.GetComponent<EnemyLife>();
+            enemyLifeScript.lifePoint = enemyLifeScript.lifePoint - 5;
             StartCoroutine(WaitOneSecond());
         }
     }

@@ -14,9 +14,11 @@ public class EnemySpawner : MonoBehaviour
     }
     private void Spawner()
     {
-        if(enemiesSpawned <= 15)
+        if(enemiesSpawned < 50)
         {
-            Instantiate(Enemies[0],transform.position,Enemies[0].transform.rotation);
+            int randomEnemy = Random.Range(0,1);
+            Debug.Log(randomEnemy);
+            Instantiate(Enemies[randomEnemy],transform.position,Enemies[randomEnemy].transform.rotation);
             enemiesSpawned ++;
         }
         else

@@ -3862,6 +3862,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4427038749017188139, guid: 897498a648600fc4eacf4e5c82217209, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905022343240388721, guid: 897498a648600fc4eacf4e5c82217209, type: 3}
+      propertyPath: m_BlockingObjects
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7908057376130723094, guid: 897498a648600fc4eacf4e5c82217209, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4123,6 +4131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Enemies:
   - {fileID: 1458391615630120, guid: 6d18ca3ac0d2ecd4aa99a8099af486bb, type: 3}
+  - {fileID: 1048570700629992, guid: 8e35ec7e332c3d243ac23e3686bafe01, type: 3}
 --- !u!1 &1629283988
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,9 @@ public class RLBulletMovement : TowerManager
     private void OnCollisionEnter(Collision other) {
         if(Continue && other.gameObject.CompareTag("Enemy"))
         {
-            Continue=false;  
+            Continue=false;
+            EnemyLife enemyLifeScript=other.gameObject.GetComponent<EnemyLife>();
+            enemyLifeScript.lifePoint = enemyLifeScript.lifePoint - 10;
             StartCoroutine(WaitOneSecond());
         }
     }
